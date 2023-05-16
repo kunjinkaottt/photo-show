@@ -146,7 +146,7 @@ export default {
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 255, 255);
-    width: 450px; //浏览器拉到最小的时候
+    width: 420px; //浏览器拉到最小的时候
     height: 470px;
     border-radius: 20px;
 
@@ -177,17 +177,17 @@ export default {
 
     .LoginForm {
       flex: 7;
-      width: 75%;
+      width: 70%;
       text-align: center;
       margin: 5px auto;
 
       div {
         height: 30px;
-        line-height: 30px;
+        line-height: 28px;
         border: 1px solid gray;
         // border: #fc9345 1px solid;
         margin: 15px;
-        border-radius: 3px;
+        border-radius: 12px;
         position: relative;
       }
 
@@ -200,16 +200,17 @@ export default {
     .RegistForm {
       flex: 7;
       text-align: center;
-      width: 75%;
+      width: 70%;
       margin: 5px auto;
 
       div {
         height: 30px;
-        line-height: 30px;
+        line-height: 28px;
+        text-align: center;
         border: 1px solid gray;
         // border: #fc9345 1px solid;
         margin: 15px;
-        border-radius: 3px;
+        border-radius: 12px;
         position: relative;
       }
 
@@ -220,13 +221,10 @@ export default {
       .password {}
     }
 
-
-
-
     input {
       width: 100%;
       height: 100%;
-      padding: 5px;
+      padding: 10px;
       box-sizing: border-box;
       border: none;
       /*清除边框*/
@@ -241,8 +239,8 @@ export default {
       opacity: 0;
     }
 
-    input:focus {
-      div::before {
+    div::before {
+        visibility: hidden;
         content: '电子邮件';
         position: absolute;
         left: 10px;
@@ -252,19 +250,17 @@ export default {
         line-height: 18px;
         background: #fff;
         font-size: xx-small;
-        border: 1px solid #fc9345;
+        // border: 1px solid #fc9345;
         box-sizing: border-box;
         text-align: center;
       }
-    }
-
     button {
       width: 90%;
       height: 35px;
       font-size: medium;
       font-weight: bold;
       background-color: #fc9345;
-      border-radius: 3px;
+      border-radius: 15px;
       border: 0px solid;
       color: #fff;
       margin: 25px auto;

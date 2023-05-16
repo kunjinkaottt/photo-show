@@ -5,12 +5,13 @@
     <div class="topleft">
       <a href="">
         <img class="logo" src="../assets/icons/商标.png" alt="">
-        <img class="title" src="../assets/icons/自由的碎片.png" alt="">
       </a>
+      <img class="title" src="../assets/icons/自由的碎片.png" alt="">
+
     </div>
 
     <div class="topmeddle">
-      <h1>来自全球才华横溢的创作者，随时随地分享图片和视频。</h1>
+      <h1 ref="h1">来自全球才华横溢的创作者，随时随地分享图片和视频。</h1>
       <div class="input">
         <img src="../assets/icons/搜索.png" alt="">
         <input type="text" placeholder="搜索高分辨率图片">
@@ -45,6 +46,7 @@ export default {
       window.innerWidth < 650 ?
         text[0].style.visibility = text[1].style.visibility = title[0].style.visibility = 'hidden' :
         text[0].style.visibility = text[1].style.visibility = title[0].style.visibility = 'visible'
+      window.innerWidth < 950 ? this.$refs.h1.style.fontSize = '25px' : this.$refs.h1.style.fontSize = '35px'
     }
   },
   created() {
@@ -76,25 +78,24 @@ export default {
   .topleft {
     z-index: 1;
     position: absolute;
-    top: 10px;
-    left: 50px;
-    width: 250px;
-    height: 100px;
+    top: 2%;
+    left: 5%;
+    // width: auto;
+    // height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
       .logo {
         margin: 5px;
         width: 60px;
       }
+    }
 
-      .title {
-        margin: 5px;
-        width: 125px;
-      }
+    .title {
+      margin: 5px;
+      width: 125px;
     }
   }
 
@@ -134,7 +135,7 @@ export default {
       border: 0;
       padding: 0 50px;
       box-sizing: border-box;
-      text-align: center; 
+      text-align: center;
 
       img {
         //搜索图标
@@ -142,12 +143,14 @@ export default {
         width: 15px;
         margin-left: -30px;
       }
-      img:hover{
+
+      img:hover {
         cursor: pointer;
         transform: scale(1.1);
       }
 
-      input { //真输入框input标签
+      input {
+        //真输入框input标签
         margin-left: 10px;
         width: 100%;
         border: none;
@@ -157,8 +160,10 @@ export default {
         outline: none;
         /*清除input点击之后的黑色边框*/
         font-size: medium;
-      } 
-      input:focus::placeholder{ //输入框聚焦时 placeholder透明度为0
+      }
+
+      input:focus::placeholder {
+        //输入框聚焦时 placeholder透明度为0
         opacity: 0;
       }
     }
@@ -166,8 +171,8 @@ export default {
 
   .topright {
     position: absolute;
-    top: 15px;
-    right: 50px;
+    top: 3%;
+    right: 5%;
     width: 300px;
     display: flex;
     justify-content: center;
@@ -199,5 +204,4 @@ export default {
       cursor: pointer;
     }
   }
-}
-</style>
+}</style>
