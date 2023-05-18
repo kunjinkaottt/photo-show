@@ -89,6 +89,7 @@ export default {
   computed: {},
   methods: {
     closeDialog() {//关闭弹窗
+      this.isLogin = true //关闭前选择登录 下次弹窗 登录键为激活状态并显示登录表单
       this.$store.commit('turnVisible')
     },
 
