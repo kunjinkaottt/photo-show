@@ -12,11 +12,11 @@
 
         <div v-if="isLogin" class="LoginForm"> <!--登录表单-->
           <div class="placeHolderDiv">
-            <input type="text"  required="required">
+            <input type="text" required="required">
             <span>用户名</span>
           </div>
           <div class="placeHolderDiv">
-            <input type="text"  required="required">
+            <input type="text" required="required">
             <span>密码</span>
           </div>
           <button type="submit">登录</button>
@@ -152,10 +152,10 @@ export default {
     }
 
     100% {
-    position: fixed; //固定定位，弹窗永远弹出在可视窗口的中间
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
+      position: fixed; //固定定位，弹窗永远弹出在可视窗口的中间
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
     }
   }
 
@@ -176,10 +176,12 @@ export default {
       margin: 30px auto;
     }
 
-    .LoginRegist { //登录注册tab
+    .LoginRegist {
+      //登录注册tab
       flex: 1;
 
-      .Active{  //选中
+      .Active {
+        //选中
         margin: 30px 30px;
         font-size: 28px;
         font-weight: bold;
@@ -187,7 +189,8 @@ export default {
         // border-bottom: 5px solid black;
       }
 
-      .NoActive { //未选中
+      .NoActive {
+        //未选中
         margin: 30px 30px;
         font-size: 28px;
         font-weight: bold;
@@ -195,13 +198,13 @@ export default {
         // border-bottom: 0 solid black;
       }
 
-      .underline{
-        margin-left: 26px;//默认在登录键下面
+      .underline {
+        margin-left: 26px; //默认在登录键下面
         width: 60px;
         height: 5px;
         background-color: rgb(0, 0, 0);
         border-radius: 3px;
-        transition: .5s;//在改变位置时有过渡效果
+        transition: .5s; //在改变位置时有过渡效果
       }
 
       span:hover {
@@ -240,13 +243,20 @@ export default {
         /*清除input点击之后的黑色边框*/
         outline: none;
         transition: .5s;
-        
+
+      }
+
+      input:focus::placeholder {
+        //输入框聚焦时 显示出placeholder文字
+        opacity: 1;
+        transition: 1s; //1秒内逐渐显示提示的文字
       }
 
       input::placeholder {
+        //输入框没有聚焦时 隐藏placeholder文字
         opacity: 0;
       }
-      
+
       span {
         //提示字
         display: block;
@@ -284,10 +294,7 @@ export default {
       background-color: #fff;
     }
 
-    input:focus::placeholder  {
-      //输入框聚焦时 placeholder文字透明度为0
-      opacity: 1;
-    }
+
 
     button {
       width: 85%;
@@ -335,5 +342,4 @@ export default {
   img {
     transform: rotate(180deg);
   }
-}
-</style>
+}</style>
