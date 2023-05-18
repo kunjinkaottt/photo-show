@@ -7,7 +7,6 @@
         <img class="logo" src="../assets/icons/商标.png" alt="">
       </a>
       <img class="title" src="../assets/icons/自由的碎片.png" alt="">
-
     </div>
 
     <div class="topmeddle">
@@ -116,6 +115,7 @@ export default {
     padding: 0 15px;
 
     h1 {
+      pointer-events: none;
       color: white;
       font-weight: bold;
       font-size: 35px;
@@ -202,6 +202,7 @@ export default {
 
     .loginRegist:hover {
       cursor: pointer;
+      opacity: 0.9;
     }
   }
 }</style>
