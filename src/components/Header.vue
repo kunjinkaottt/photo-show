@@ -153,6 +153,7 @@ export default {
         //真输入框input标签
         margin-left: 10px;
         width: 100%;
+        height: 100%;
         border: none;
         /*清除边框*/
         background: none;

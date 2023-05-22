@@ -3,13 +3,11 @@
     <div class="back" @click="closeDialog()">
       <div class="dialog" @click.stop="" v-if="$store.state.visible"> <!-- stop阻止向上冒泡，在dialog里的点击事件不会冒泡到back -->
         <img src="../assets/icons/登录注册.png" alt="" class="logo">
-
         <div class="LoginRegist">
           <span @click="Login($event)" id="login" class="Active">登录</span>
           <span @click="Register($event)" class="NoActive">注册</span>
           <div class="underline"></div>
         </div>
-
         <div v-if="isLogin" class="LoginForm"> <!--登录表单-->
           <div class="placeHolderDiv">
             <input type="text" required="required">
@@ -83,13 +81,13 @@ export default {
   },
   watch: {
     '$store.state.visible'(newVal) {    //监听弹窗的可视属性
+      this.isLogin = true //关闭前选择登录 下次弹窗 登录键为激活状态并显示登录表单
       this.DialogVisibility(newVal)
     }
   },
   computed: {},
   methods: {
     closeDialog() {//关闭弹窗
-      this.isLogin = true //关闭前选择登录 下次弹窗 登录键为激活状态并显示登录表单
       this.$store.commit('turnVisible')
     },
 
