@@ -9,7 +9,7 @@
       <img class="title" src="../assets/icons/自由的碎片.png" alt="">
     </div>
 
-    <div class="topmeddle">
+    <div class="topmiddle">
       <h1 ref="h1">来自全球才华横溢的创作者，随时随地分享图片和视频。</h1>
       <div class="input">
         <img src="../assets/icons/搜索.png" alt="">
@@ -108,7 +108,7 @@ export default {
     min-width: 100%; //拉伸收缩页面 改变分辨率，视频都铺满父级div
   }
 
-  .topmeddle {
+  .topmiddle {
     z-index: 1;
     flex: 1;
     max-width: 900px;

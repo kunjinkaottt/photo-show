@@ -20,7 +20,7 @@
         ref="image"
         @load="imageOnload()"
       />
-      <span  class="source">资源来源:<a href="https://www.pexels.com/zh-cn/" style="color:aqua;">pexels网站</a></span>
+      <span  class="source">来自：<a href="https://www.pexels.com/zh-cn/">pexels</a></span>
       <a class="collect icons" @click="loginRegist()"
         ><img title="收藏" src="../assets/icons/收藏.png" alt=""
       /></a>
@@ -222,6 +222,10 @@ export default {
       left: 50px;
       float: left;
       color: #fff;
+      a{
+        text-decoration: none;
+        color:white;
+      }
     }
     .icons:hover {
       transform: scale(1.1);

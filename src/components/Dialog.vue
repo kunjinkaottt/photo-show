@@ -242,7 +242,6 @@ export default {
         /*清除input点击之后的黑色边框*/
         outline: none;
         transition: .5s;
-
       }
 
       input:focus::placeholder {
@@ -286,14 +285,13 @@ export default {
 
     .placeHolderDiv input:valid~span,
     .placeHolderDiv input:focus~span {
+      // ~ 是指与input同级的所有span ，而不是input下面的子span
       color: #fc9345;
       transform: translateY(-19px) scale(0.9);
       font-size: 12px;
       padding: 4px;
       background-color: #fff;
     }
-
-
 
     button {
       width: 85%;
