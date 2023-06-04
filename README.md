@@ -44,16 +44,20 @@ npm run build
 
 ## 主要界面
 
-![image-20230518224618284](C:\Program Files\typroimg\image-20230518224618284.png)
+![image-20230518224618284](https://github.com/kunjinkaottt/photo-show/assets/110094636/8340c55e-2226-42b9-8160-103227d6048d)
+
 
 ## 登录注册弹窗界面
+![image-20230518224635682](https://github.com/kunjinkaottt/photo-show/assets/110094636/bb0dcb2c-17a1-42f3-b1f3-06ba98fee42a)
 
-![image-20230518224635682](C:\Program Files\typroimg\image-20230518224635682.png)![image-20230518224646683](C:\Program Files\typroimg\image-20230518224646683.png)
+![image-20230518224646683](https://github.com/kunjinkaottt/photo-show/assets/110094636/71f35c80-0169-4fff-8054-f50fcf1b2996)
+
 
 ## 项目中的弹窗动画和一些过渡效果
 
-![过渡和动画](C:\Program Files\typroimg\过渡和动画.gif)
+![动画和过渡](https://github.com/kunjinkaottt/photo-show/assets/110094636/168cf00a-0a77-4065-978c-34f3d5c5a91a)
+
 
 ## 自适应效果
 
-![自适应效果](C:\Program Files\typroimg\自适应效果.gif)
+![自适应效果](https://github.com/kunjinkaottt/photo-show/assets/110094636/c4c22594-4962-4f0f-a269-a860ac0a6007)
